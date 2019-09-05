@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 8px;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: #fff;
+    position: relative;
+    font-family: Microsoft YaHe;
+}
+
+hr {
+    border-width: 0;
+    border-top: 1px solid #ccc;
+}
+
+main {
+    height: calc(100vh - 50px);
+    overflow: scroll;
+}
+
+main section {
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main section a {
+    display: block;
+    position: relative;
+}
+
+main section.active {
+    display: block;
+}
+
+main section.top-repos p:nth-child(1) {
+    float: left;
+    padding: 3px 5px;
+    background-color: #008000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main section.top-repos p:nth-child(2) {
+    color: #333;
+}
+
+main section.top-repos p:last-child {
+    color: #ccc;
+}
+
+main section.top-repos div {
+    margin-left: 40px;
+}
+
+main section.top-users img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+main section.search {
+    position: relative;
+}
+
+main section.search input {
+    background-color: #eeeeee;
+    width: calc(100% - 10px);
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 0;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+main section.search input:focus {
+    border: 0;
+    outline: 0;
+}
+
+main section.search a.search-btn {
+    background-color: #ff3c22;
+    color: #fff;
+    text-align: center;
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 0;
+    margin: 0;
+}
+
+footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+footer>div {
+    flex: 1;
+    text-align: center;
+}
+
+footer div span {
+    display: block;
+    padding-top: 5px;
+}
+
+footer .active {
+    color: #ff5722;
+}
